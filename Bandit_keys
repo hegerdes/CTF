@@ -49,4 +49,19 @@ bandit9 UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR
 strings data.txt | grep "="
 bandit10    truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk
 
+#11
+base62 FILE -d
+bandit11    IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR
+
+#12
+cat data.txt | tr '[a-z]' '[n-za-m]' 
+bandit12    5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu
+
+#13
+bandit13 8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL  
+
+#14
+Use ssh -i KEY bandit14@localhost
+bandit 14 4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e
+
 
