@@ -1,0 +1,52 @@
+#Here are all the ssh users and keys from the bandit challenge form over the wire
+
+#Remote
+bandit.labs.overthewire.org:2220
+
+#RemoteComandText to local Clipboard
+ssh banditNUM@bandit.labs.overthewire.org -p 2220 cat FILE | xclip -selection c
+
+Tipps:
+Spaces in names: Use ""
+Dash in names: Use ./-
+Pip to cat: ls | xargs cat
+
+#0
+bandit0 bandit0
+
+#1
+bandit1 boJ9jbbUNNfktd78OOpsqOltutMc3MY1
+
+#2
+bandit2 CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9
+
+#3
+bandit3 UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK
+
+#4
+bandit4 pIwrPrtPN36QITSp3EQaw936yaFoFgAB
+
+#5
+bandit5 koReBOKuIDDepwhWk7jZC0RTdopnAYKh
+
+#6
+find . -size 1033c
+bandit6 DXjZPULLxYr17uwoI01bNLQbtFemEgo7
+
+#7
+find / -group bandit6 -user bandit7 -readable -perm -200
+bandit7 HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs
+
+#8
+cat data | grep millio
+bandit8 cvX2JJa4CFALtqS87jk27qwqGhBM9plV
+
+#9
+cat data.txt | sort | uniq -i -c | grep "1 "
+bandit9 UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR
+
+#10
+strings data.txt | grep "="
+bandit10    truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk
+
+
