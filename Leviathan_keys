@@ -1,0 +1,46 @@
+#Here are all the ssh users and keys from the leviatan challenge form over the wire
+
+#Remote
+leviathan.labs.overthewire.org:2223
+
+#RemoteComandText to local Clipboard
+ssh banditNUM@leviathan.labs.overthewire.org -p 2223 cat FILE | xclip -selection c
+
+
+#comands:
+ltrace      -Trace of the called function of the programm
+ln          -Link files
+
+#!/bin/bash
+
+for i in {0000..9999}
+do
+        echo $i;
+        /home/leviathan6/leviathan6 $i
+done
+
+
+#0
+leviathan0  leviathan0
+
+#1
+leviathan1  rioGegei8m
+
+#2
+leviathan2  ougahZi8Ta
+
+#3
+leviathan3  Ahdiemoo1j
+
+#4
+leviathan4 vuH0coox6m
+
+#5
+leviatan5 Tith4cokei
+
+#6
+leviatan6 UgaoFee4li
+
+#7 PIN 7123
+leviatan7 ahy7MaeBo9
+
