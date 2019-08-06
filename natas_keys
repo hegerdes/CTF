@@ -76,6 +76,11 @@ curl -u natas13:jmLTY0qiPZBbaKc9341cqPQZBJv7MQbY -F "MAX_FILE_SIZE=1000" -F "fil
 #Err Content of wile will be executed
 natas14 Lg96M10TdfaPyVBkJdjymbllQ5L6qdl1 
 
+#15 SQL INjectiono " or "1"="1 in pass
+#Err No user input serialisation
+natas15  AwWj0w5cvxrZiONgZ9J5stNVkmxdk39J
 
-
+#16 SQL Brutforce
+#Err Let me guell PW
+natas16 WaIHEacj63wnNIBROHeqi3p9t0m5nhmh
 
