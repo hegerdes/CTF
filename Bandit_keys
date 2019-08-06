@@ -64,4 +64,44 @@ bandit13 8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL
 Use ssh -i KEY bandit14@localhost
 bandit 14 4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e
 
+#15
+Use echo 4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e | nc  localhost 30000
+bandit15 BfMYroe26WYalil77FoDi9qh59eK5xNr
 
+#16
+Use  openssl s_client -connect localhost:30001 -ign_eof
+bandit16    cluFn7wTiGryunymYOu4RcffSxQluehd
+
+#17 bandit16@bandit:~$ nmap -p 31000-32000 localhost
+Open Ports
+31518/tcp open  unknown
+31790/tcp open  unknown
+openssl s_client -connect localhost:31790 -ign_eof > tmp
+ssh -i tmp bandit17@localhost
+bandit17    xLYVMN9WE5zQ5vHacb0sZEVqbrp7nBTn
+
+#18
+diff FILE1 FILE2
+bandit18 kfBf3eYk5BPBRzwjqutbbfE887SVc5Yd
+
+#19
+ssh -t bandit18@bandit.labs.overthewire.org -p 2220 "cat readme"
+bandit19    IueksS7Ubh8G3DCwVzrTd8rAVOwq3M5x
+
+#20
+bandit20 GbKksEFF4yrVs6il55v6gwY5aVje5f0j
+
+#21
+Need two terminals
+echo "GbKksEFF4yrVs6il55v6gwY5 | nc -l -p 60000
+./Prog 60000
+bandit21    gE269g2h3mw3pwgrj0Ha9Uoqen1c9DGr
+
+#22 
+cat /etc/cron.d/cronjob_bandit22
+cat /usr/bin/cronjob_bandit22.sh
+bandit22 Yk7owGAcWjwMVRwrTesJEwB7WVOiILLI
+
+#23
+Same as last level
+bandit13    jc1udXuA1tiHqjIsL8yaapX5XIAI6i0n
