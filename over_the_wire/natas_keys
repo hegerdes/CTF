@@ -96,3 +96,11 @@ natas18 xvKIqDjy4OPv7wCRgDlmj0pFsCsDjhdP
 #Err Overflow of executed users
 natas19 4IwIrekcuZlA9OsjOkoUtwU6lhokCPYs
 
+#20 One static Coockie to log in as admin
+#Err need to guess session id and user. Convert to hex
+natas20 eofm3Wsshxc5bwtVnEuGIlr7ivb9KABF
+
+
+#21 Flaw in Read and write session id
+# New lin charakter not escaped use username foo%0Aadmin 1
+natas21 IFekPyrQXftziDEsUr3x21sYuahypdgJ
