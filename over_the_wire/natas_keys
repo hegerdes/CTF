@@ -42,7 +42,6 @@ Find the included secret. Enter the secret
 #Err Hardcodeed include to file with secret
 natas7  7z3hEENjQtflzgnT29q7wAvMNfZdh0i9
 
-
 #8 Navigate via ?page= to file with PW
 #Err Direct accsess to souce files on filesystem via PHP
 natas8  DBfUBfqQG69KvJvJ1iAbMoIpwSNQ9bWe
@@ -102,5 +101,27 @@ natas20 eofm3Wsshxc5bwtVnEuGIlr7ivb9KABF
 
 
 #21 Flaw in Read and write session id
-# New lin charakter not escaped use username foo%0Aadmin 1
+#Err New lin charakter not escaped use username foo%0Aadmin 1
 natas21 IFekPyrQXftziDEsUr3x21sYuahypdgJ
+
+#22 Can intersect the Session array
+#Err no input serialisation
+natas22 chG9fbe1Tq2eWVMgjYYD1MsfIvN461kJ
+
+#23 Set SessionCookie and skip redirects
+#Err user addable sessiondata
+natas23 D0vlad33nQF0Hz2EP255TP5wSW9ZsRSE
+
+#24 Password musst contain iloveyou and be >10
+#Err Hardcooded hints for password.
+natas24 OsRmXFguozKpTZZ5X14zNO43379LZveg
+
+#25 Compare password with strcom
+#Err expects string give array passwd[]=foo
+natas25 GHF6X7YwACaYYssHVY05cFq83hRktl4c
+
+#26 Path Injection
+#Err user input not save
+natas26 oGgWAJ7zcGT28vYazGo4rkhOPDhBu34T
+
+#27
