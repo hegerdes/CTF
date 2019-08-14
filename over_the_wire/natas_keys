@@ -124,4 +124,6 @@ natas25 GHF6X7YwACaYYssHVY05cFq83hRktl4c
 #Err user input not save
 natas26 oGgWAJ7zcGT28vYazGo4rkhOPDhBu34T
 
-#27
+#27 Cookie manipulation. Look at natas26.php. Wrie fake cookie
+#Err deserialization of an objekt without filtering content. Content is execttable
+natas27 55TBjpPZUUJgVP5b3BnbG6ON9uDPVzCJ
